@@ -36,14 +36,12 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
-            Find Your
-            <span className="bg-gradient-gold bg-clip-text text-transparent"> Dream </span>
-            Home
+            Discover Modern Living
+            <span className="bg-gradient-gold bg-clip-text text-transparent"> at Its Best </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            Discover luxury properties across Kenya with PECALI Real Estate. 
-            Your gateway to premium living and investment opportunities.
+            Your Gateway to Tsavo Apartments and Beyond
           </p>
 
           {/* Search Bar */}

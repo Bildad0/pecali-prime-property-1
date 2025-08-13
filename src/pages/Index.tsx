@@ -3,62 +3,66 @@ import Hero from "@/components/Hero";
 import PropertyCard from "@/components/PropertyCard";
 import Footer from "@/components/Footer";
 import LogoRain from "@/components/LogoRain";
+import IntroSection from "@/components/IntroSection";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Shield, Users, Award, ArrowRight, Star, CheckCircle, Quote } from "lucide-react";
 const Index = () => {
-  // Sample property data
+  // Updated Tsavo Lifestyle property data
   const featuredProperties = [{
     id: "1",
-    title: "Luxury Villa in Karen",
-    location: "Karen, Nairobi",
-    price: "KSH 45M",
-    type: "Villa",
-    bedrooms: 4,
-    bathrooms: 3,
-    area: "2,500 sq ft",
+    title: "Tsavo Royal Suburbs Apartments",
+    location: "Roysambu, Nairobi",
+    price: "KSH 3.2M",
+    type: "Apartment",
+    bedrooms: 2,
+    bathrooms: 2,
+    area: "900 sq ft",
     image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
     featured: true,
-    status: "For Sale" as const
+    status: "For Sale" as const,
+    description: "Affordable modern units with high rental occupancy rates"
   }, {
     id: "2",
-    title: "Modern Apartment in Westlands",
-    location: "Westlands, Nairobi",
-    price: "KSH 120K/month",
+    title: "Tsavo Step Up Apartments",
+    location: "Fedha, Nairobi",
+    price: "KSH 85K/month",
     type: "Apartment",
-    bedrooms: 3,
-    bathrooms: 2,
-    area: "1,800 sq ft",
+    bedrooms: 1,
+    bathrooms: 1,
+    area: "650 sq ft",
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
-    status: "For Rent" as const
+    status: "For Rent" as const,
+    description: "Stylish, budget-friendly apartments near key amenities"
   }, {
     id: "3",
-    title: "Penthouse in Kilimani",
-    location: "Kilimani, Nairobi",
-    price: "KSH 35M",
+    title: "Tsavo Skywalk Premium",
+    location: "Kileleshwa, Nairobi",
+    price: "KSH 5.8M",
     type: "Penthouse",
     bedrooms: 3,
     bathrooms: 3,
-    area: "2,200 sq ft",
+    area: "1,400 sq ft",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
     featured: true,
-    status: "For Sale" as const
+    status: "For Sale" as const,
+    description: "Premium city-view apartments ideal for young professionals and investors"
   }];
   const services = [{
     icon: TrendingUp,
-    title: "Property Sales",
-    description: "Expert guidance through buying and selling premium properties with maximum returns.",
-    features: ["Market Analysis", "Property Valuation", "Negotiation Support"]
+    title: "Property Sales & Leasing",
+    description: "Direct access to developer listings and verified resale units with proven ROI potential.",
+    features: ["Tsavo Lifestyle Projects", "Developer Direct Access", "Verified Resale Units"]
   }, {
     icon: Shield,
     title: "Property Management",
-    description: "Comprehensive property management services ensuring your investments are well-maintained.",
-    features: ["Tenant Screening", "Maintenance Services", "Rent Collection"]
+    description: "Comprehensive tenant, maintenance, and revenue management for stress-free ownership.",
+    features: ["Rent Collection", "Tenant Screening", "Maintenance & Repairs"]
   }, {
     icon: Users,
-    title: "Real Estate Training",
-    description: "Professional real estate training and mentorship programs for aspiring professionals.",
-    features: ["Certification Courses", "Practical Training", "Career Mentorship"]
+    title: "Investment Advisory",
+    description: "Strategic guidance to maximize property returns for local and diaspora investors.",
+    features: ["Market Analysis", "ROI Optimization", "Risk Assessment"]
   }];
   const testimonials = [{
     name: "Sarah Mwangi",
@@ -83,6 +87,7 @@ const Index = () => {
       <LogoRain />
       <Navbar />
       <Hero />
+      <IntroSection />
 
       {/* Featured Properties Section */}
       <section className="py-20 bg-secondary/30">
@@ -90,10 +95,10 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-gradient-gold text-foreground">Featured Properties</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Discover Premium Properties
+              Tsavo Lifestyle Properties
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Handpicked luxury properties that define exceptional living and investment opportunities
+              Premium apartments in Nairobi's most sought-after developments with strong capital appreciation
             </p>
           </div>
 
