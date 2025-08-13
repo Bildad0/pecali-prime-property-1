@@ -38,16 +38,12 @@ const Navbar = () => {
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src="/lovable-uploads/fa8c1598-094b-41c9-94da-4e5dff4aecfe.png" 
               alt="PECALI Real Estate" 
-              className="h-12 w-auto"
+              className="h-16 w-auto hover:scale-105 transition-transform duration-200"
             />
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-primary">PECALI</h1>
-              <p className="text-xs text-muted-foreground">REAL ESTATE</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
