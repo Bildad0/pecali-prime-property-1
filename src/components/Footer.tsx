@@ -1,21 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Instagram, 
-  Facebook, 
-  Twitter, 
-  Linkedin,
-  Clock,
-  Send
-} from "lucide-react";
-
+import { Phone, Mail, MapPin, Instagram, Facebook, Twitter, Linkedin, Clock, Send } from "lucide-react";
 const Footer = () => {
-  return (
-    <footer className="bg-gradient-to-br from-primary-dark to-primary text-primary-foreground">
+  return <footer className="bg-gradient-to-br from-primary-dark to-primary text-primary-foreground">
       {/* Newsletter Section */}
       <div className="border-b border-primary-light/20">
         <div className="container mx-auto px-4 py-12">
@@ -25,10 +13,7 @@ const Footer = () => {
               Get the latest property listings, market insights, and exclusive offers delivered to your inbox.
             </p>
             <div className="flex gap-2 max-w-md mx-auto">
-              <Input
-                placeholder="Enter your email"
-                className="bg-white/10 border-white/20 text-primary-foreground placeholder:text-primary-foreground/60"
-              />
+              <Input placeholder="Enter your email" className="bg-white/10 border-white/20 text-primary-foreground placeholder:text-primary-foreground/60" />
               <Button className="bg-gradient-gold hover:bg-gold text-foreground font-semibold">
                 <Send className="h-4 w-4 mr-2" />
                 Subscribe
@@ -44,11 +29,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/fa8c1598-094b-41c9-94da-4e5dff4aecfe.png" 
-                alt="PECALI Real Estate" 
-                className="h-12 w-auto brightness-0 invert"
-              />
+              <img src="/lovable-uploads/fa8c1598-094b-41c9-94da-4e5dff4aecfe.png" alt="PECALI Real Estate" className="h-12 w-auto brightness-0 invert" />
               <div>
                 <h2 className="text-xl font-bold">PECALI</h2>
                 <p className="text-sm text-primary-foreground/80">REAL ESTATE</p>
@@ -78,23 +59,29 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-3">
-              {[
-                { label: "Properties for Sale", href: "/properties?type=sale" },
-                { label: "Properties for Rent", href: "/properties?type=rent" },
-                { label: "Property Management", href: "/services#management" },
-                { label: "Real Estate Training", href: "/training" },
-                { label: "Investment Opportunities", href: "/investments" },
-                { label: "Market Reports", href: "/reports" }
-              ].map((link) => (
-                <li key={link.label}>
-                  <a 
-                    href={link.href}
-                    className="text-primary-foreground/80 hover:text-accent transition-colors duration-200"
-                  >
+              {[{
+              label: "Properties for Sale",
+              href: "/properties?type=sale"
+            }, {
+              label: "Properties for Rent",
+              href: "/properties?type=rent"
+            }, {
+              label: "Property Management",
+              href: "/services#management"
+            }, {
+              label: "Real Estate Training",
+              href: "/training"
+            }, {
+              label: "Investment Opportunities",
+              href: "/investments"
+            }, {
+              label: "Market Reports",
+              href: "/reports"
+            }].map(link => <li key={link.label}>
+                  <a href={link.href} className="text-primary-foreground/80 hover:text-accent transition-colors duration-200">
                     {link.label}
                   </a>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -102,18 +89,9 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-semibold">Our Services</h3>
             <ul className="space-y-3">
-              {[
-                "Property Sales & Leasing",
-                "Property Management",
-                "Real Estate Consulting",
-                "Investment Advisory",
-                "Property Valuation",
-                "Legal Documentation"
-              ].map((service) => (
-                <li key={service} className="text-primary-foreground/80">
+              {["Property Sales & Leasing", "Property Management", "Real Estate Consulting", "Investment Advisory", "Property Valuation", "Legal Documentation"].map(service => <li key={service} className="text-primary-foreground/80">
                   {service}
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
@@ -124,27 +102,21 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                 <div className="text-primary-foreground/80">
-                  <p>Tsavo Fedha Plaza</p>
+                  <p>Tsavo Fedha, EMBAKASI</p>
                   <p>Nairobi, Kenya</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <a 
-                  href="tel:+254758174718" 
-                  className="text-primary-foreground/80 hover:text-accent transition-colors"
-                >
+                <a href="tel:+254758174718" className="text-primary-foreground/80 hover:text-accent transition-colors">
                   +254 758 174718
                 </a>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <a 
-                  href="mailto:info@pecali.co.ke" 
-                  className="text-primary-foreground/80 hover:text-accent transition-colors"
-                >
+                <a href="mailto:info@pecali.co.ke" className="text-primary-foreground/80 hover:text-accent transition-colors">
                   info@pecali.co.ke
                 </a>
               </div>
@@ -183,8 +155,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

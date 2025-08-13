@@ -4,107 +4,81 @@ import PropertyCard from "@/components/PropertyCard";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { 
-  TrendingUp, 
-  Shield, 
-  Users, 
-  Award,
-  ArrowRight,
-  Star,
-  CheckCircle,
-  Quote
-} from "lucide-react";
-
+import { TrendingUp, Shield, Users, Award, ArrowRight, Star, CheckCircle, Quote } from "lucide-react";
 const Index = () => {
   // Sample property data
-  const featuredProperties = [
-    {
-      id: "1",
-      title: "Luxury Villa in Karen",
-      location: "Karen, Nairobi",
-      price: "KSH 45M",
-      type: "Villa",
-      bedrooms: 4,
-      bathrooms: 3,
-      area: "2,500 sq ft",
-      image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
-      featured: true,
-      status: "For Sale" as const
-    },
-    {
-      id: "2", 
-      title: "Modern Apartment in Westlands",
-      location: "Westlands, Nairobi",
-      price: "KSH 120K/month",
-      type: "Apartment",
-      bedrooms: 3,
-      bathrooms: 2,
-      area: "1,800 sq ft",
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
-      status: "For Rent" as const
-    },
-    {
-      id: "3",
-      title: "Penthouse in Kilimani",
-      location: "Kilimani, Nairobi",
-      price: "KSH 35M",
-      type: "Penthouse",
-      bedrooms: 3,
-      bathrooms: 3,
-      area: "2,200 sq ft",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
-      featured: true,
-      status: "For Sale" as const
-    }
-  ];
-
-  const services = [
-    {
-      icon: TrendingUp,
-      title: "Property Sales",
-      description: "Expert guidance through buying and selling premium properties with maximum returns.",
-      features: ["Market Analysis", "Property Valuation", "Negotiation Support"]
-    },
-    {
-      icon: Shield,
-      title: "Property Management",
-      description: "Comprehensive property management services ensuring your investments are well-maintained.",
-      features: ["Tenant Screening", "Maintenance Services", "Rent Collection"]
-    },
-    {
-      icon: Users,
-      title: "Real Estate Training",
-      description: "Professional real estate training and mentorship programs for aspiring professionals.",
-      features: ["Certification Courses", "Practical Training", "Career Mentorship"]
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Mwangi",
-      role: "Property Investor",
-      content: "PECALI helped me find the perfect investment property in Nairobi. Their expertise and professionalism are unmatched.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      name: "David Ochieng",
-      role: "First-time Home Buyer",
-      content: "As a first-time buyer, PECALI made the process seamless. They guided me every step of the way.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      name: "Grace Wanjiku",
-      role: "Real Estate Student",
-      content: "The training program at PECALI transformed my career. I'm now a successful real estate agent.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const featuredProperties = [{
+    id: "1",
+    title: "Luxury Villa in Karen",
+    location: "Karen, Nairobi",
+    price: "KSH 45M",
+    type: "Villa",
+    bedrooms: 4,
+    bathrooms: 3,
+    area: "2,500 sq ft",
+    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
+    featured: true,
+    status: "For Sale" as const
+  }, {
+    id: "2",
+    title: "Modern Apartment in Westlands",
+    location: "Westlands, Nairobi",
+    price: "KSH 120K/month",
+    type: "Apartment",
+    bedrooms: 3,
+    bathrooms: 2,
+    area: "1,800 sq ft",
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+    status: "For Rent" as const
+  }, {
+    id: "3",
+    title: "Penthouse in Kilimani",
+    location: "Kilimani, Nairobi",
+    price: "KSH 35M",
+    type: "Penthouse",
+    bedrooms: 3,
+    bathrooms: 3,
+    area: "2,200 sq ft",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+    featured: true,
+    status: "For Sale" as const
+  }];
+  const services = [{
+    icon: TrendingUp,
+    title: "Property Sales",
+    description: "Expert guidance through buying and selling premium properties with maximum returns.",
+    features: ["Market Analysis", "Property Valuation", "Negotiation Support"]
+  }, {
+    icon: Shield,
+    title: "Property Management",
+    description: "Comprehensive property management services ensuring your investments are well-maintained.",
+    features: ["Tenant Screening", "Maintenance Services", "Rent Collection"]
+  }, {
+    icon: Users,
+    title: "Real Estate Training",
+    description: "Professional real estate training and mentorship programs for aspiring professionals.",
+    features: ["Certification Courses", "Practical Training", "Career Mentorship"]
+  }];
+  const testimonials = [{
+    name: "Sarah Mwangi",
+    role: "Property Investor",
+    content: "PECALI helped me find the perfect investment property in Nairobi. Their expertise and professionalism are unmatched.",
+    rating: 5,
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+  }, {
+    name: "David Ochieng",
+    role: "First-time Home Buyer",
+    content: "As a first-time buyer, PECALI made the process seamless. They guided me every step of the way.",
+    rating: 5,
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+  }, {
+    name: "Grace Wanjiku",
+    role: "Real Estate Student",
+    content: "The training program at PECALI transformed my career. I'm now a successful real estate agent.",
+    rating: 5,
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+  }];
+  return <div className="min-h-screen bg-background">
       <Navbar />
       <Hero />
 
@@ -122,9 +96,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {featuredProperties.map((property) => (
-              <PropertyCard key={property.id} property={property} />
-            ))}
+            {featuredProperties.map(property => <PropertyCard key={property.id} property={property} />)}
           </div>
 
           <div className="text-center">
@@ -150,12 +122,9 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div 
-                key={service.title}
-                className="group p-8 rounded-xl bg-card hover:bg-card-hover border border-border hover:shadow-card transition-all duration-300 animate-slide-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+            {services.map((service, index) => <div key={service.title} className="group p-8 rounded-xl bg-card hover:bg-card-hover border border-border hover:shadow-card transition-all duration-300 animate-slide-up" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:shadow-luxury transition-all duration-300">
                   <service.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
@@ -169,19 +138,16 @@ const Index = () => {
                 </p>
 
                 <ul className="space-y-2">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center text-sm text-muted-foreground">
+                  {service.features.map(feature => <li key={feature} className="flex items-center text-sm text-muted-foreground">
                       <CheckCircle className="h-4 w-4 text-accent mr-2 flex-shrink-0" />
                       {feature}
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
 
                 <Button variant="ghost" className="mt-6 p-0 h-auto text-primary hover:text-accent">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -199,20 +165,29 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { icon: Award, title: "Expert Team", description: "Certified professionals with years of experience" },
-              { icon: Shield, title: "Trusted Service", description: "Transparent and reliable real estate solutions" },
-              { icon: TrendingUp, title: "Market Leaders", description: "Deep understanding of Kenyan real estate market" },
-              { icon: Users, title: "Client-Focused", description: "Personalized service tailored to your needs" }
-            ].map((benefit, index) => (
-              <div key={benefit.title} className="text-center group">
+            {[{
+            icon: Award,
+            title: "Expert Team",
+            description: "Certified professionals with years of experience"
+          }, {
+            icon: Shield,
+            title: "Trusted Service",
+            description: "Transparent and reliable real estate solutions"
+          }, {
+            icon: TrendingUp,
+            title: "Market Leaders",
+            description: "Deep understanding of Kenyan real estate market"
+          }, {
+            icon: Users,
+            title: "Client-Focused",
+            description: "Personalized service tailored to your needs"
+          }].map((benefit, index) => <div key={benefit.title} className="text-center group">
                 <div className="w-20 h-20 bg-gradient-gold rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="h-10 w-10 text-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
                 <p className="text-primary-foreground/80">{benefit.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -231,12 +206,9 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={testimonial.name}
-                className="bg-card rounded-xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 animate-scale-in"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+            {testimonials.map((testimonial, index) => <div key={testimonial.name} className="bg-card rounded-xl p-8 shadow-card hover:shadow-luxury transition-all duration-300 animate-scale-in" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 <Quote className="h-8 w-8 text-accent mb-4" />
                 
                 <p className="text-card-foreground mb-6 leading-relaxed">
@@ -244,24 +216,17 @@ const Index = () => {
                 </p>
 
                 <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 text-accent fill-current" />
-                  ))}
+                  {[...Array(testimonial.rating)].map((_, i) => <Star key={i} className="h-4 w-4 text-accent fill-current" />)}
                 </div>
 
                 <div className="flex items-center">
-                  <img 
-                    src={testimonial.avatar} 
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4"
-                  />
+                  
                   <div>
                     <h4 className="font-semibold text-card-foreground">{testimonial.name}</h4>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -288,8 +253,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
