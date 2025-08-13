@@ -121,9 +121,9 @@ const Hero = () => {
             {/* Search Button */}
             <Button 
               onClick={handleSearch}
-              className="w-full h-14 bg-gradient-primary hover:bg-gradient-luxury text-lg font-semibold shadow-gold"
+              className="w-full h-14 bg-gradient-primary hover:bg-gradient-luxury text-lg font-semibold shadow-gold text-black"
             >
-              <Search className="h-5 w-5 mr-2" />
+              <Search className="h-5 w-5 mr-2 text-black" />
               Find Your Dream Home
             </Button>
           </div>
