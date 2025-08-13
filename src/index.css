@@ -128,4 +128,26 @@ Royal Blue, Gradient Greys, Orange-Gold Luxury Palette
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Logo Rain Animation */
+  @keyframes logoFall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(calc(100vh + 100px)) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  .animate-logo-fall {
+    animation: logoFall linear infinite;
+  }
 }
