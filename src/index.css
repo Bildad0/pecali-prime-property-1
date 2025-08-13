@@ -132,7 +132,7 @@ Royal Blue, Gradient Greys, Orange-Gold Luxury Palette
   /* Logo Rain Animation */
   @keyframes logoFall {
     0% {
-      transform: translateY(-100px) rotate(0deg);
+      transform: translateY(-150px) rotate(0deg);
       opacity: 0;
     }
     10% {
@@ -142,12 +142,32 @@ Royal Blue, Gradient Greys, Orange-Gold Luxury Palette
       opacity: 1;
     }
     100% {
-      transform: translateY(calc(100vh + 100px)) rotate(360deg);
+      transform: translateY(calc(100vh + 150px)) rotate(720deg);
       opacity: 0;
+    }
+  }
+  
+  /* Logo Bounce Animation */
+  @keyframes logoBounce {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg) scale(1);
+    }
+    25% {
+      transform: translateY(-30px) rotate(90deg) scale(1.1);
+    }
+    50% {
+      transform: translateY(-60px) rotate(180deg) scale(1.2);
+    }
+    75% {
+      transform: translateY(-30px) rotate(270deg) scale(1.1);
     }
   }
   
   .animate-logo-fall {
     animation: logoFall linear infinite;
+  }
+  
+  .animate-logo-bounce {
+    animation: logoBounce ease-in-out infinite;
   }
 }
