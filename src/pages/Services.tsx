@@ -201,7 +201,7 @@ const Services = () => {
               What Sets Us Apart
             </h2>
             <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
-              Specialized expertise in Tsavo Lifestyle projects with a proven track record of success.
+              Specialized expertise in premium lifestyle projects with a proven track record of success.
             </p>
           </div>
 

@@ -6,7 +6,7 @@ const IntroSection = () => {
     {
       icon: Building2,
       title: "Premium Apartments",
-      description: "Especially Tsavo Lifestyle units, known for modern design & prime locations."
+      description: "Quality lifestyle units with modern design & prime locations - exciting projects coming soon."
     },
     {
       icon: TrendingUp,
@@ -34,9 +34,9 @@ const IntroSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             PECALI Real Estate specializes in affordable luxury apartments and investment-ready properties 
-            within Nairobi's most sought-after developments — with a strong focus on Tsavo Apartments under 
-            the Tsavo Lifestyle brand. Whether you're buying, renting, or investing, we make your property 
-            journey smooth, secure, and rewarding.
+            within Nairobi's most sought-after developments. We have exciting premium apartment projects 
+            coming soon that will offer modern living at its finest. Whether you're buying, renting, or investing, 
+            we make your property journey smooth, secure, and rewarding.
           </p>
         </div>
 

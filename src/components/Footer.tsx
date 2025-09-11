@@ -40,11 +40,25 @@ const Footer = () => {
               sales, and professional training across Kenya.
             </p>
             <div className="flex space-x-4">
-              <Button size="sm" variant="ghost" className="text-primary-foreground hover:text-accent hover:bg-white/10">
-                <Instagram className="h-5 w-5" />
+              <Button 
+                size="sm" 
+                variant="ghost" 
+                className="text-primary-foreground hover:text-accent hover:bg-white/10"
+                asChild
+              >
+                <a href="https://www.instagram.com/pecal.i?utm_source=ig_web_button_share_sheet&igsh=MTE2c250M3lxd2VsaQ==" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                </a>
               </Button>
-              <Button size="sm" variant="ghost" className="text-primary-foreground hover:text-accent hover:bg-white/10">
-                <Facebook className="h-5 w-5" />
+              <Button 
+                size="sm" 
+                variant="ghost" 
+                className="text-primary-foreground hover:text-accent hover:bg-white/10"
+                asChild
+              >
+                <a href="https://www.facebook.com/people/Pecali-real-estate/61579203827937/" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-5 w-5" />
+                </a>
               </Button>
               <Button size="sm" variant="ghost" className="text-primary-foreground hover:text-accent hover:bg-white/10">
                 <Twitter className="h-5 w-5" />
@@ -102,7 +116,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                 <div className="text-primary-foreground/80">
-                  <p>Tsavo Fedha, EMBAKASI</p>
+                  <p>Fedha, EMBAKASI</p>
                   <p>Nairobi, Kenya</p>
                 </div>
               </div>

@@ -41,7 +41,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            Your Gateway to Tsavo Apartments and Beyond
+            Your Gateway to Premium Properties and Investment Opportunities
           </p>
 
           {/* Search Bar */}

@@ -11,9 +11,9 @@ const Properties = () => {
   const propertiesForSale = [
     {
       id: "1",
-      title: "Tsavo Royal Apartments",
+      title: "Premium Royal Apartments",
       location: "Roysambu, Nairobi",
-      price: "KSH 3.2M",
+      price: "Coming Soon",
       type: "Apartment",
       bedrooms: 2,
       bathrooms: 2,
@@ -21,26 +21,26 @@ const Properties = () => {
       image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
       featured: true,
       status: "For Sale" as const,
-      description: "Prime rental hotspot with affordable modern units"
+      description: "Exciting premium development project launching soon"
     },
     {
       id: "2",
-      title: "Tsavo Step Up Apartments",
+      title: "Modern Step Up Apartments",
       location: "Fedha, Nairobi",
-      price: "KSH 2.8M",
+      price: "Coming Soon",
       type: "Apartment",
       bedrooms: 1,
       bathrooms: 1,
       area: "650 sq ft",
       image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
       status: "For Sale" as const,
-      description: "Affordable city living with modern amenities"
+      description: "Quality lifestyle apartments launching soon"
     },
     {
       id: "3",
-      title: "Tsavo Skyline Premium",
+      title: "Skyline Premium Residences",
       location: "Kileleshwa, Nairobi",
-      price: "KSH 5.8M",
+      price: "Coming Soon",
       type: "Penthouse",
       bedrooms: 3,
       bathrooms: 3,
@@ -48,7 +48,7 @@ const Properties = () => {
       image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
       featured: true,
       status: "For Sale" as const,
-      description: "Urban professional lifestyle with city views"
+      description: "Premium city-view apartments - exciting project coming soon"
     }
   ];
 
@@ -85,7 +85,7 @@ const Properties = () => {
     {
       icon: Building2,
       title: "Direct Developer Access",
-      description: "We work directly with Tsavo Apartments and other reputable developers"
+      description: "We work directly with premium developers - exciting projects coming soon"
     },
     {
       icon: TrendingUp,
@@ -129,12 +129,12 @@ const Properties = () => {
             Find Your Perfect Space
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-4xl mx-auto">
-            From Tsavo Lifestyle Apartments to Premier Nairobi Properties
+            Premium Lifestyle Apartments and Premier Nairobi Properties Coming Soon
           </p>
           <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
             At PECALI Real Estate, we showcase a handpicked collection of apartments, homes, and investment-ready properties 
-            in Kenya's most promising locations. Our specialty is connecting clients to Tsavo Lifestyle Apartments — 
-            developments known for quality finishes, strategic locations, and unmatched value.
+            in Kenya's most promising locations. We specialize in connecting clients to premium lifestyle developments 
+            known for quality finishes, strategic locations, and unmatched value. Exciting projects launching soon!
           </p>
         </div>
       </section>
@@ -148,7 +148,7 @@ const Properties = () => {
               Investment-Ready Properties
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Newly built Tsavo units and select resale apartments with flexible payment plans, 
+              Premium development projects launching soon with flexible payment plans, 
               direct developer access, and ideal ROI potential.
             </p>
           </div>
@@ -232,7 +232,7 @@ const Properties = () => {
               Premium Properties
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Premium Tsavo Royal units, skyline apartments, and urban condos with interactive location browsing.
+              Premium apartment units, skyline residences, and urban condos - exciting projects coming soon.
             </p>
           </div>
 

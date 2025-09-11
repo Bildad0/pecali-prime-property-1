@@ -58,7 +58,7 @@ const Training = () => {
     {
       icon: Users,
       title: "Direct Exposure to Live Projects",
-      description: "Get hands-on experience with Tsavo Lifestyle projects and active listings in the market."
+      description: "Get hands-on experience with premium development projects and active listings in the market."
     },
     {
       icon: Award,
