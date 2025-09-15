@@ -42,7 +42,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/fa8c1598-094b-41c9-94da-4e5dff4aecfe.png" 
               alt="PECALI Real Estate" 
-              className="h-32 w-auto hover:scale-105 transition-transform duration-200"
+              className="h-40 w-auto hover:scale-105 transition-transform duration-200"
             />
           </div>
 
