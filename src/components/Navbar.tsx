@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/pecali_logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,15 +37,13 @@ const Navbar = () => {
         </div>
 
         {/* Main navigation */}
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between py-2">
           {/* Logo */}
-          <div className="flex items-center">
             <img 
-              src="/lovable-uploads/fa8c1598-094b-41c9-94da-4e5dff4aecfe.png" 
+              src={logo} 
               alt="PECALI Real Estate" 
               className="h-20 w-auto hover:scale-105 transition-transform duration-200"
             />
-          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
