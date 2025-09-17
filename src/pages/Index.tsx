@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Shield, Users, Award, ArrowRight, Star, CheckCircle, Quote } from "lucide-react";
 const Index = () => {
-  // Updated Tsavo Lifestyle property data
+  // Premium Property Projects - Coming Soon
   const featuredProperties = [{
     id: "1",
-    title: "Tsavo Royal Suburbs Apartments",
+    title: "Premium Royal Apartments",
     location: "Roysambu, Nairobi",
-    price: "KSH 3.2M",
+    price: "Coming Soon",
     type: "Apartment",
     bedrooms: 2,
     bathrooms: 2,
@@ -21,24 +21,24 @@ const Index = () => {
     image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
     featured: true,
     status: "For Sale" as const,
-    description: "Affordable modern units with high rental occupancy rates"
+    description: "Exciting premium development project launching soon"
   }, {
     id: "2",
-    title: "Tsavo Step Up Apartments",
+    title: "Modern Step Up Apartments",
     location: "Fedha, Nairobi",
-    price: "KSH 85K/month",
+    price: "Coming Soon",
     type: "Apartment",
     bedrooms: 1,
     bathrooms: 1,
     area: "650 sq ft",
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
     status: "For Rent" as const,
-    description: "Stylish, budget-friendly apartments near key amenities"
+    description: "Quality lifestyle apartments launching soon"
   }, {
     id: "3",
-    title: "Tsavo Skywalk Premium",
+    title: "Skyline Premium Residences",
     location: "Kileleshwa, Nairobi",
-    price: "KSH 5.8M",
+    price: "Coming Soon",
     type: "Penthouse",
     bedrooms: 3,
     bathrooms: 3,
@@ -46,13 +46,13 @@ const Index = () => {
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
     featured: true,
     status: "For Sale" as const,
-    description: "Premium city-view apartments ideal for young professionals and investors"
+    description: "Premium city-view apartments - exciting project coming soon"
   }];
   const services = [{
     icon: TrendingUp,
     title: "Property Sales & Leasing",
     description: "Direct access to developer listings and verified resale units with proven ROI potential.",
-    features: ["Tsavo Lifestyle Projects", "Developer Direct Access", "Verified Resale Units"]
+    features: ["Premium Projects Coming Soon", "Developer Direct Access", "Verified Resale Units"]
   }, {
     icon: Shield,
     title: "Property Management",
@@ -94,7 +94,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-gradient-gold text-foreground">Featured Properties</Badge>
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Tsavo Lifestyle Properties
+              Premium Properties Coming Soon
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Premium apartments in Nairobi's most sought-after developments with strong capital appreciation

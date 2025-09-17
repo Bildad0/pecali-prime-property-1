@@ -42,7 +42,7 @@ const Navbar = () => {
             <img 
               src={logo} 
               alt="PECALI Real Estate" 
-              className="h-20 w-auto hover:scale-105 transition-transform duration-200"
+              className="h-40 w-auto hover:scale-105 transition-transform duration-200"
             />
 
           {/* Desktop Navigation */}

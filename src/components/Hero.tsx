@@ -35,13 +35,13 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 pt-24">
         <div className="max-w-4xl mx-auto text-center text-white">
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
-            Discover Modern Living
-            <span className="bg-gradient-gold bg-clip-text text-transparent"> at Its Best </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 animate-slide-up leading-tight">
+            <span className="block">Discover Modern Living</span>
+            <span className="bg-gradient-gold bg-clip-text text-transparent block"> at Its Best </span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            Your Gateway to Tsavo Apartments and Beyond
+            Your Gateway to Premium Properties and Investment Opportunities
           </p>
 
           {/* Search Bar */}

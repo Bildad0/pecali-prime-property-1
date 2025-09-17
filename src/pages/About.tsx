@@ -67,8 +67,8 @@ const About = () => {
       description: "Specialized services for Kenyan diaspora investors, making property investment accessible from anywhere in the world."
     },
     {
-      title: "Tsavo Specialists",
-      description: "Deep expertise in Tsavo Lifestyle Apartments with exclusive access to developer opportunities."
+      title: "Premium Project Specialists",
+      description: "Deep expertise in premium lifestyle developments with exclusive access to developer opportunities."
     }
   ];
 
@@ -89,7 +89,7 @@ const About = () => {
           <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
             PECALI Real Estate is a Kenyan-born property solutions company committed to making affordable luxury housing 
             and high-return investments accessible to all. Founded with a passion for transforming how people buy, sell, 
-            and invest in real estate, we focus heavily on Tsavo Lifestyle Apartments — developments that embody modern living.
+            and invest in real estate, we focus on premium lifestyle developments that embody modern living.
           </p>
         </div>
       </section>
@@ -241,7 +241,7 @@ const About = () => {
               <p>
                 Our founders recognized the need for a more transparent, client-focused approach to real estate, 
                 particularly in the growing market for affordable luxury housing. This led to our specialization 
-                in Tsavo Lifestyle Apartments and our commitment to serving both local and diaspora clients.
+                in premium lifestyle developments and our commitment to serving both local and diaspora clients.
               </p>
               <p>
                 Today, we stand as a trusted partner for hundreds of clients who have found their dream homes, 
