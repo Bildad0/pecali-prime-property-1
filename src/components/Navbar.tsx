@@ -52,7 +52,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-card">
+    <nav className="fixed top-0 left-0 right-0 z-100 bg-background/95 backdrop-blur-md border-b border-border shadow-card">
       <div className="container mx-auto px-2">
         {/* Top bar with contact info */}
         <div className="hidden md:flex items-center justify-between py-1 text-sm border-b border-border/50">
@@ -115,21 +115,30 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu button (always visible on small screens) */}
           <button
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-1 text-foreground hover:text-primary transition-colors"
+            className="md:hidden p-2 rounded-md transition-colors duration-150 flex items-center justify-center
+                       bg-background/30 backdrop-blur-sm text-foreground hover:bg-background/40"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
 
-        {/* Mobile Navigation with active states */}
-        <div className={cn(
-          "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
-          isOpen ? "max-h-96 pb-2" : "max-h-0"
-        )}>
-          <div className="space-y-2 pt-2 border-t border-border">
+        {/* Mobile Navigation with active states - positioned below navbar and constrained to viewport */}
+        <div
+          className={cn(
+            "md:hidden absolute left-0 right-0 top-full bg-background/95 border-t border-border shadow-card transition-all duration-300 ease-in-out",
+            isOpen
+              ? "overflow-auto pb-4" // allow scrolling when open
+              : "overflow-hidden"
+          )}
+          // limit height so menu never overflows viewport on mobile
+          style={{ maxHeight: isOpen ? "calc(100vh - 64px)" : 0 }}
+        >
+          <div className="space-y-2 pt-3 px-3">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -139,7 +148,7 @@ const Navbar = () => {
                   handleNavClick(item.href, item.id);
                 }}
                 className={cn(
-                  "block transition-colors duration-200 font-medium px-1",
+                  "block transition-colors duration-200 font-medium py-2 px-2 rounded-md",
                   "hover:text-primary",
                   isActive(item.href) ? "text-primary" : "text-foreground"
                 )}
@@ -147,12 +156,14 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
-            <Button 
-              className="w-full bg-gradient-primary hover:bg-gradient-luxury shadow-gold mt-2 px-3 py-1"
-              onClick={() => handleNavClick('/contact', 'contact')}
-            >
-              Get Started
-            </Button>
+            <div className="px-2">
+              <Button
+                className="w-full bg-gradient-primary hover:bg-gradient-luxury shadow-gold mt-2 px-3 py-2"
+                onClick={() => handleNavClick("/contact", "contact")}
+              >
+                Get Started
+              </Button>
+            </div>
           </div>
         </div>
       </div>

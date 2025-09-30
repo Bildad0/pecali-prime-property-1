@@ -34,8 +34,7 @@ const IntroSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             PECALI Real Estate specializes in affordable luxury apartments and investment-ready properties 
-            within Nairobi's most sought-after developments. We have exciting premium apartment projects 
-            coming soon that will offer modern living at its finest. Whether you're buying, renting, or investing, 
+            within Nairobi's most sought-after developments. We have exciting premium apartment projects  that will offer modern living at its finest. Whether you're buying, renting, or investing, 
             we make your property journey smooth, secure, and rewarding.
           </p>
         </div>

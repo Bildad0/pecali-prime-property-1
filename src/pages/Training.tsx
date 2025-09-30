@@ -98,19 +98,18 @@ const Training = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LogoRain />
       <Navbar />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-primary-dark text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center mt-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Master the Art of Real Estate Sales
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-4xl mx-auto">
             Training & Mentorship with PECALI
           </p>
-          <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Our Real Estate Sales Training & Mentorship program is built to equip you with real-world skills 
             for thriving in Kenya's competitive property market.
           </p>
@@ -246,7 +245,7 @@ const Training = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Why Choose Our Training Program?
             </h2>
-            <p className="text-xl text-primary-foreground/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Get the competitive edge you need in Kenya's dynamic real estate market.
             </p>
           </div>
@@ -263,7 +262,7 @@ const Training = () => {
                   <feature.icon className="h-10 w-10 text-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                <p className="text-primary-foreground/80">{feature.description}</p>
+                <p className="text-gray-400">{feature.description}</p>
               </div>
             ))}
           </div>

@@ -29,17 +29,18 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
     <Card 
       className={cn(
         "group overflow-hidden border-0 shadow-card hover:shadow-luxury transition-all duration-300 transform hover:-translate-y-2",
-        "bg-card hover:bg-card-hover"
+        "bg-card hover:bg-card-hover",
+        "flex flex-col h-full" // ensure card stretches to equal height in grids
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image Container */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden aspect-[4/3] sm:aspect-[16/9]">
         <img
           src={property.image}
           alt={property.title}
-          className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
         />
         
         {/* Overlay */}
@@ -79,7 +80,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
           <Heart className={cn("h-4 w-4", isLiked && "fill-current")} />
         </button>
 
-        {/* Action Buttons (shown on hover) */}
+        {/* Action Buttons (shown on hover) - anchored inside image container so they don't affect card height */}
         <div className={cn(
           "absolute bottom-4 left-4 right-4 flex gap-2 transition-all duration-300",
           isHovered ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
@@ -101,7 +102,7 @@ const PropertyCard = ({ property }: PropertyCardProps) => {
       </div>
 
       {/* Content */}
-      <CardContent className="p-6">
+      <CardContent className="p-6 flex-1">
         <div className="space-y-3">
           {/* Title */}
           <h3 className="text-xl font-semibold text-card-foreground line-clamp-2 group-hover:text-primary transition-colors">

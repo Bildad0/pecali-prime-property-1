@@ -55,7 +55,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      info: "info@pecalirealestate.co.ke",
+      info: "info@pecali.co.ke",
       description: "Send us detailed inquiries and we'll respond promptly",
       action: "Send Email"
     }
@@ -69,7 +69,6 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LogoRain />
       <Navbar />
       
       {/* Hero Section */}

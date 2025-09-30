@@ -104,7 +104,7 @@ const Hero = () => {
 									placeholder="Search location..."
 									value={searchData.location}
 									onChange={(e) => setSearchData({ ...searchData, location: e.target.value })}
-									className="pl-10 h-12 border-2 focus:border-primary w-full"
+									className="pl-10 h-12 border-2 focus:border-primary w-full text-black"
 								/>
 							</div>
 							<Button
@@ -135,14 +135,14 @@ const Hero = () => {
 							>
 								<SelectTrigger className="h-12 border-2 focus:border-primary">
 									<Home className="h-4 w-4 mr-2" />
-									<SelectValue placeholder="Property Type" />
+									<SelectValue placeholder="Property Type" className="text-black" />
 								</SelectTrigger>
 								<SelectContent>
-									<SelectItem value="apartment">Apartment</SelectItem>
-									<SelectItem value="house">House</SelectItem>
-									<SelectItem value="villa">Villa</SelectItem>
-									<SelectItem value="land">Land</SelectItem>
-									<SelectItem value="commercial">Commercial</SelectItem>
+									<SelectItem value="apartment" className="text-black">Apartment</SelectItem>
+									<SelectItem value="house" className="text-black">House</SelectItem>
+									<SelectItem value="villa" className="text-black">Villa</SelectItem>
+									<SelectItem value="land" className="text-black">Land</SelectItem>
+									<SelectItem value="commercial" className="text-black">Commercial</SelectItem>
 								</SelectContent>
 							</Select>
 
@@ -152,7 +152,7 @@ const Hero = () => {
 								onValueChange={(value) => setSearchData({ ...searchData, priceRange: value })}
 							>
 								<SelectTrigger className="h-12 border-2 focus:border-primary">
-									<SelectValue placeholder="Price Range" />
+									<SelectValue placeholder="Price Range" className="text-black" />
 								</SelectTrigger>
 								<SelectContent>
 									<SelectItem value="0-5m">Under 5M KES</SelectItem>
@@ -174,7 +174,7 @@ const Hero = () => {
 										<SelectValue placeholder="Beds" />
 									</SelectTrigger>
 									<SelectContent>
-										{[1, 2, 3, 4, "5+"].map((num) => (
+										{["studio","superior studio",1, 2, 3, 4, "5+"].map((num) => (
 											<SelectItem key={num} value={String(num)}>
 												{num} Bed
 											</SelectItem>

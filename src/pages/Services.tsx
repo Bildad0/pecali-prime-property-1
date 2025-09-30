@@ -96,19 +96,17 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LogoRain />
       <Navbar />
-      
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-primary-dark text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center mt-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Full-Spectrum Real Estate Solutions
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-4xl mx-auto">
             For Buyers, Investors, and Developers
           </p>
-          <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
             We are more than a property listing agency — PECALI Real Estate is your complete property partner, 
             from purchase to management, from valuation to legal documentation.
           </p>

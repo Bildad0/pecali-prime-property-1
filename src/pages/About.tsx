@@ -74,19 +74,18 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LogoRain />
       <Navbar />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-primary-dark text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center mt-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Who We Are
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-4xl mx-auto">
             The PECALI Promise
           </p>
-          <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
             PECALI Real Estate is a Kenyan-born property solutions company committed to making affordable luxury housing 
             and high-return investments accessible to all. Founded with a passion for transforming how people buy, sell, 
             and invest in real estate, we focus on premium lifestyle developments that embody modern living.

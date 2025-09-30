@@ -119,19 +119,18 @@ const Properties = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <LogoRain />
       <Navbar />
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-primary to-primary-dark text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center mt-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Find Your Perfect Space
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-4xl mx-auto">
             Premium Lifestyle Apartments and Premier Nairobi Properties Coming Soon
           </p>
-          <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
             At PECALI Real Estate, we showcase a handpicked collection of apartments, homes, and investment-ready properties 
             in Kenya's most promising locations. We specialize in connecting clients to premium lifestyle developments 
             known for quality finishes, strategic locations, and unmatched value. Exciting projects launching soon!
@@ -244,7 +243,7 @@ const Properties = () => {
 
           <div className="text-center">
             <Button className="bg-gradient-primary hover:bg-gradient-luxury shadow-gold text-lg px-8 py-6">
-              Start your property search today. Your perfect space awaits.
+              Your perfect space awaits.
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

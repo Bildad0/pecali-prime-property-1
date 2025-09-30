@@ -97,7 +97,7 @@ const Index = () => {
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-gradient-gold text-foreground">Featured Properties</Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Premium Properties Coming Soon
+            Premium Properties
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Premium apartments in Nairobi's most sought-after developments with strong capital appreciation
@@ -254,7 +254,7 @@ const Index = () => {
           <Button className="bg-gradient-gold hover:bg-gold text-foreground font-semibold text-lg px-8 py-6">
             Browse Properties
           </Button>
-          <Button variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6">
+          <Button variant="outline" className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6">
             Schedule Consultation
           </Button>
         </div>
