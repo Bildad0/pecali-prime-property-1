@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-12">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-4">Stay Updated with PECALI</h3>
-            <p className="text-primary-foreground/80 mb-6">
+            <p className="text-gray-400 mb-6">
               Get the latest property listings, market insights, and exclusive offers delivered to your inbox.
             </p>
             <div className="flex gap-2 max-w-md mx-auto">
@@ -35,7 +35,7 @@ const Footer = () => {
                 <p className="text-sm text-primary-foreground/80">REAL ESTATE</p>
               </div>
             </div>
-            <p className="text-primary-foreground/80 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed">
               Your trusted partner in real estate excellence. We specialize in property management, 
               sales, and professional training across Kenya.
             </p>
@@ -72,7 +72,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div className="space-y-6">
             <h3 className="text-lg font-semibold">Quick Links</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 ">
               {[{
               label: "Properties for Sale",
               href: "/properties?type=sale"
@@ -92,7 +92,7 @@ const Footer = () => {
               label: "Market Reports",
               href: "/reports"
             }].map(link => <li key={link.label}>
-                  <a href={link.href} className="text-primary-foreground/80 hover:text-accent transition-colors duration-200">
+                  <a href={link.href} className="text-gray-400 hover:text-accent transition-colors duration-200">
                     {link.label}
                   </a>
                 </li>)}
@@ -103,7 +103,7 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-lg font-semibold">Our Services</h3>
             <ul className="space-y-3">
-              {["Property Sales & Leasing", "Property Management", "Real Estate Consulting", "Investment Advisory", "Property Valuation", "Legal Documentation"].map(service => <li key={service} className="text-primary-foreground/80">
+              {["Property Sales & Leasing", "Property Management", "Real Estate Consulting", "Investment Advisory", "Property Valuation", "Legal Documentation"].map(service => <li key={service} className="text-gray-400">
                   {service}
                 </li>)}
             </ul>
@@ -116,28 +116,28 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                 <div className="text-primary-foreground/80">
-                  <p>Fedha, EMBAKASI</p>
-                  <p>Nairobi, Kenya</p>
+                  <p className="text-gray-400">Fedha, EMBAKASI</p>
+                  <p className="text-gray-400">Nairobi, Kenya</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <a href="tel:+254758174718" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <a href="tel:+254758174718" className="text-gray-400 hover:text-accent transition-colors">
                   +254 758 174718
                 </a>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent" />
-                <a href="mailto:info@pecalirealestate.co.ke" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                <a href="mailto:info@pecalirealestate.co.ke" className="text-gray-400 hover:text-accent transition-colors">
                   info@pecalirealestate.co.ke
                 </a>
               </div>
 
               <div className="flex items-start space-x-3">
                 <Clock className="h-5 w-5 text-accent mt-1" />
-                <div className="text-primary-foreground/80">
+                <div className="text-gray-400">
                   <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
                   <p>Sat: 9:00 AM - 4:00 PM</p>
                   <p>Sun: Closed</p>
